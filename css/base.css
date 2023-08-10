@@ -231,6 +231,7 @@ body #cdawrap {
 	align-self: center;
 	top: 14rem;
 	padding-bottom: var(--padding-page);
+	margin-bottom: var(--padding-page);
 }
 
 h2 {
