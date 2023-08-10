@@ -229,6 +229,7 @@ body #cdawrap {
 	position: relative;
 	justify-self: end;
 	align-self: center;
+	top: 10rem;
 	padding-bottom: var(--padding-page);
 }
 
