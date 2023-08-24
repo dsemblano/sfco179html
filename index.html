@@ -63,7 +63,8 @@
 					<source src="video/home.mp4" type="video/mp4" />
 				</video> -->
 				<div class="content__inner self-center lg:self-end">
-					<h2 class="text-sfco">
+					<h2 class="flex flex-col lg:flex-row items-end lg:items-center text-sfco">
+						<img class="mb-6 lg:mb-0 lg:mr-4 w-2/4 lg:w-auto" src="img/logos/sfco179.png" alt="">
 						SFCO179
 					</h2>
 					<!-- <h2>
@@ -79,8 +80,9 @@
 			<section class="content">
 				<div class="canvas-wrap" style="background-image:url(img/tijolo-home.jpg)"></div>
 				<div class="content__inner self-center lg:self-end">
-					<h3 class="text-tijolo">
-						<span>TIJOLO CWB</span><br>
+					<h3 class="flex flex-col lg:flex-row items-end lg:items-center">
+						<img class="mb-6 lg:mb-0 lg:mr-4 w-2/4 lg:w-auto" src="img/logos/tijolo.png" alt="">
+						Tijolo CWB
 					</h3>
 					<p class="text-base lg:text-3xl">Projeto de comida descomplicada. Slow food, na experiência, na produção com cuidado e atenção plena, sem a pressa do fast food e do cotidiano. Trabalhamos com a ideia de comida saudável e muito saborosa, oferecemos comida de verdade.</p>
 				</div>
@@ -88,7 +90,8 @@
 			<section class="content">
 				<div class="canvas-wrap" style="background-image:url(img/royalcafe-home.jpg)"></div>
 				<div class="content__inner self-center lg:self-end">
-					<h3 class="text-white">
+					<h3 class="flex flex-col lg:flex-row items-end lg:items-center">
+						<img class="mb-6 lg:mb-0 lg:mr-4 w-2/4 lg:w-auto" src="img/logos/royalty.png" alt="">
 						Royal Cafe
 					</h3>
 					<p class="text-base lg:text-3xl">For the love of coffee:<br>Compartilhamos cafés únicos e com personalidade, unindo pessoas e encurtando distâncias.</p>
@@ -97,7 +100,9 @@
 			<section class="content">
 				<div class="canvas-wrap" style="background-image:url(img/utopiatropicalchocolate-home.jpg)"></div>
 				<div class="content__inner self-center lg:self-end">
-					<h3>Utopia Tropical
+					<h3 class="flex flex-col lg:flex-row items-end lg:items-center">
+						<img class="mb-6 lg:mb-0 lg:mr-4 w-2/4 lg:w-auto" src="img/logos/Utopiabranca.png" alt="">
+						Utopia Tropical
 					</h3>
 					<p class="text-base lg:text-3xl">Experimental chocolate factory.</p>
 				</div>
@@ -109,5 +114,25 @@
 		<script src="js/ScrollTrigger.min.js"></script>
 		<script src="js/lenis.min.js"></script>
 		<script type="module" src="js/index.js"></script>
+		<script>
+			window.addEventListener('load', function() {
+			const dynamicBackground = document.querySelector('.dynamic-background');
+
+			const images = [
+				'img/home1.jpg',
+				'img/royalcafe-home.jpg',
+			];
+
+			let currentImageIndex = 0;
+
+			function changeBackgroundImage() {
+				dynamicBackground.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+				currentImageIndex = (currentImageIndex + 1) % images.length;
+			}
+
+			// Change the background image every 5 seconds
+			setInterval(changeBackgroundImage, 5000);
+			});
+		</script>
 	</body>
 </html>
