@@ -210,6 +210,10 @@ body #cdawrap {
 	position: relative;
 }
 
+.content-home {
+	height: 100vh;
+}
+
 .canvas-wrap {
 	position: absolute;
 	top: 0;
