@@ -291,3 +291,14 @@ h2 span:nth-child(even) {
 		justify-self: end;
 	}
 }
+
+.video-sfco {
+	height: 100%;
+	left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+	display: flex;
+    width: 100%;
+}
